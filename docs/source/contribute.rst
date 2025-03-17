@@ -157,7 +157,8 @@ A **pull request (PR)** is a request to merge your changes into the main reposit
 This allows project maintainers to review your edits before approving them.
 
 1. **Open a pull request**:
-   - In the section "Create a Pull Request from your current branch" in GitHub Desktop, click **"Create Pull Request"**. 
+   
+   - In the section "Create a Pull Request from your current branch" in GitHub Desktop, select **"Create Pull Request"** from the drop-down menu. 
    - This opens GitHub in a browser.
    - Click **"Create Pull Request"** and add a short description.
 
