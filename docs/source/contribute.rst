@@ -196,10 +196,3 @@ Common GitHub Desktop Issues
 - **Cloned the wrong branch?** → Switch branches in **GitHub Desktop**.
 - **Accidentally committed to main?** → Create a new branch and reset main.
 
-Final Notes
-===========
-
-This guide provides a **consistent workflow** for contributors to edit and submit documentation updates.  
-For any issues, reach out via GitHub **Issues**.
-
-Happy documenting! 🚀
