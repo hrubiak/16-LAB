@@ -19,7 +19,7 @@
 
 project = '16-LAB'
 copyright = '2025, CKB'
-author = 'CKB'
+author = 'RH & CKB'
 
 
 # -- General configuration ---------------------------------------------------
