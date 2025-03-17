@@ -19,11 +19,10 @@ documentation generator, to convert them into **HTML web pages**.
 The contribution process involves the following steps:
 
 1. **Cloning the repository**: Download the latest documentation source files from GitHub.
-2. **Creating a new branch**: Work on a separate branch to keep changes organized.
-3. **Editing the documentation**: Modify the ``.rst`` files in VSCode, or any other appropriate editor.
-4. **Building and previewing the documentation locally**: Use **Sphinx** to compile the files from ``.rst`` to HTML.
-5. **Committing and pushing changes**: Save the updates and upload them back to GitHub.
-6. **Creating a pull request (PR)**: Request for the changes to be merged into the main repository.
+2. **Editing the documentation**: Modify the ``.rst`` files in VSCode.
+3. **Building and previewing the documentation locally**: Use **Sphinx** to compile the files from ``.rst`` to HTML.
+4. **Committing and pushing changes**: Save the updates and upload them back to GitHub.
+5. **Creating a pull request (PR)**: Request for the changes to be merged into the main repository.
 
 By following this guide, you will be able to **successfully contribute** to the documentation and ensure  
 it remains up to date and well-structured.
@@ -76,18 +75,6 @@ to your local computer so you can edit files and contribute to the project.
 7. Once cloning is complete, **open the repository in VSCode**:
 
    - In GitHub Desktop, click **Repository → Open in Visual Studio Code**.
-
-Creating a New Branch
-=====================
-
-A **branch** is an independent line of development that allows contributors to make changes without affecting the main project.  
-Before making any edits, create a new branch.
-
-1. Open **GitHub Desktop**.
-2. Click **Branch → Create a new branch**.
-3. Name it something descriptive (e.g., ``docs-update``).
-4. Click **Create branch**.
-5. The new branch is now active.
 
 Setting Up the Python Environment
 =================================
@@ -160,7 +147,7 @@ There are two ways to open the repository in **VSCode**:
 
 1. Make the necessary changes in the ``.rst`` files.
 2. Follow the reStructuredText syntax for formatting.
-3. Save the file after editing (``Ctrl + S`` or ``Cmd + S`` on Mac).
+3. Save the file after editing (``Ctrl + S`` or ``Cmd + S`` on macOS).
 
 Previewing the Documentation Locally
 ====================================
@@ -230,7 +217,7 @@ them to GitHub. This ensures that changes are tracked and shared with the projec
 1. Open **GitHub Desktop**.
 2. The modified files will appear in the **Changes** panel.
 3. Write a commit message (e.g., ``Updated documentation for feature X``).
-4. Click **Commit to [your branch name]**.
+4. Click **Commit to main**.
 5. Click **Push origin** (this uploads your changes to GitHub).
 
 Creating a Pull Request (PR)
@@ -241,7 +228,7 @@ This allows project maintainers to review your edits before approving them.
 
 1. **Open a pull request**:
    
-   - In the section "Create a Pull Request from your current branch" in GitHub Desktop, select **"Create Pull Request"** from the drop-down menu. 
+   - Click **"Create Pull Request"** in GitHub Desktop.
    - This opens GitHub in a browser.
    - Click **"Create Pull Request"** and add a short description.
 
@@ -273,9 +260,4 @@ Sphinx Build Errors?
   .. code-block:: bash
 
      pip install -r requirements.txt
-
-Common GitHub Desktop Issues
-----------------------------
-- **Cloned the wrong branch?** → Switch branches in **GitHub Desktop**.
-- **Accidentally committed to main?** → Create a new branch and reset main.
 
