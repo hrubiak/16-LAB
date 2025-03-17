@@ -7,25 +7,50 @@ to update the Sphinx documentation for the `16-LAB` project.
 
 Repository URL: `https://github.com/hrubiak/16-LAB <https://github.com/hrubiak/16-LAB>`_
 
+Introduction
+============
+
+The documentation for this project is **hosted on GitHub** and written using **reStructuredText (.rst)**,  
+a lightweight markup language commonly used for technical documentation.
+
+Contributors use **Visual Studio Code (VSCode)** to edit the ``.rst`` files and `Sphinx <https://www.sphinx-doc.org>`_, a Python-based  
+documentation generator, to convert them into **HTML web pages**.
+
+The contribution process involves the following steps:
+
+1. **Cloning the repository**: Download the latest documentation source files from GitHub.
+2. **Creating a new branch**: Work on a separate branch to keep changes organized.
+3. **Editing the documentation**: Modify the ``.rst`` files in VSCode, or any other appropriate editor.
+4. **Building and previewing the documentation locally**: Use **Sphinx** to compile the files from ``.rst`` to HTML.
+5. **Committing and pushing changes**: Save the updates and upload them back to GitHub.
+6. **Creating a pull request (PR)**: Request for the changes to be merged into the main repository.
+
+By following this guide, you will be able to **successfully contribute** to the documentation and ensure  
+it remains up to date and well-structured.
+
 Prerequisites: Software Installation
 ====================================
 
 Before starting, install the following:
 
 1. **Create a GitHub Account**  
+   
    - GitHub is an online platform for version control and collaboration.
    - Sign up at `https://github.com <https://github.com>`_.
 
 2. **Install GitHub Desktop**  
+   
    - GitHub Desktop is a tool that simplifies Git operations using a graphical interface.
    - Download: `https://desktop.github.com/ <https://desktop.github.com/>`_
    - Install and **sign in** to GitHub.
 
 3. **Install Visual Studio Code (VSCode)**  
+
    - VSCode is a code editor used to edit the documentation files.
    - Download: `https://code.visualstudio.com/ <https://code.visualstudio.com/>`_.
 
 4. **Install Python 3.12 and Conda (Minimal Setup)**  
+   
    - Sphinx, the tool used to build the documentation, requires Python.
    - **Recommended:** Install `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_.
    - **Alternatively:** Install `Anaconda <https://www.anaconda.com/download/>`_.
@@ -49,6 +74,7 @@ to your local computer so you can edit files and contribute to the project.
 5. Choose a local directory (e.g., ``C:\Users\YourName\Documents\16-LAB``).
 6. Click **Clone**.
 7. Once cloning is complete, **open the repository in VSCode**:
+
    - In GitHub Desktop, click **Repository → Open in Visual Studio Code**.
 
 Creating a New Branch
@@ -103,9 +129,38 @@ Editing the Documentation
 Editing the documentation means modifying the ``.rst`` (reStructuredText) files, 
 which contain the text and formatting used to generate the HTML documentation.
 
-1. Open **VSCode**.
-2. Locate and open ``source/index.rst`` (or any ``.rst`` file).
-3. Make changes and save the file.
+**1. Open the Project Folder in VSCode**
+
+There are two ways to open the repository in **VSCode**:
+
+**Option 1: Open from GitHub Desktop (Recommended)**
+
+1. In **GitHub Desktop**, go to **Repository → Open in Visual Studio Code**.
+
+**Option 2: Open Manually from File Explorer**
+
+1. Open **File Explorer (Windows)** or **Finder (Mac)**.
+2. Navigate to the cloned repository folder:
+   
+   - **Windows:** ``C:\Users\YourName\Documents\16-LAB\``
+   - **Mac/Linux:** ``/Users/YourName/Documents/16-LAB/``
+  
+3. Open the ``docs/`` folder where the documentation files are located.
+
+**2. Locate and Open the reStructuredText (.rst) Files**
+
+1. Inside the ``docs/`` folder, you will find the main documentation files.
+2. The most important file is:
+   
+   - ``index.rst`` → This is the main documentation entry point.
+  
+3. To edit, **double-click** an ``.rst`` file in VSCode to open it.
+
+**3. Edit the Documentation**
+
+1. Make the necessary changes in the ``.rst`` files.
+2. Follow the reStructuredText syntax for formatting.
+3. Save the file after editing (``Ctrl + S`` or ``Cmd + S`` on Mac).
 
 Previewing the Documentation Locally
 ====================================
@@ -113,30 +168,58 @@ Previewing the Documentation Locally
 After making changes, it's important to **build** the documentation and preview how it looks.  
 This allows contributors to verify formatting and content before submitting changes.
 
-1. Open the **VSCode terminal**.
-2. Navigate to the ``docs/`` folder:
+1. **Open the VSCode terminal**:
+   
+   - If the terminal is not open by default:
+     - Windows/Linux: Press ``Ctrl + ~``.
+     - macOS: Press ``Cmd + ~``.
+     - OR go to **View → Terminal** in the top menu.
 
-   .. code-block:: bash
+2. **Activate the Conda environment**:
+   
+   - Ensure that you are using the correct Conda environment before running any Sphinx commands.
+   - If the environment is not already activated, run:
 
-      cd docs
+     .. code-block:: bash
 
-3. Run the Sphinx build command:
+        conda activate sphinx-docs
 
-   .. code-block:: bash
+     If you see an error like ``Command 'conda' not found``, ensure Miniconda/Anaconda is installed correctly and restart VSCode.
 
-      make html  # macOS/Linux
+3. **Navigate to the `docs/` folder**:
+   
+   - If you are not already inside the documentation directory, run:
 
-   .. code-block:: powershell
+     .. code-block:: bash
 
-      .\make.bat html  # Windows
+        cd docs
 
-4. Open the generated file:
+4. **Run the Sphinx build command**:
+   
+   - On macOS/Linux:
 
-   .. code-block:: text
+     .. code-block:: bash
 
-      _build/html/index.html
+        make html
 
-5. Review your changes in a browser.
+   - On Windows:
+
+     .. code-block:: powershell
+
+        .\make.bat html
+
+5. **Open the generated documentation**:
+   
+   - After the build completes, open the following file in your web browser:
+
+     .. code-block:: text
+
+        _build/html/index.html
+
+6. **Review your changes**:
+   
+   - Navigate through the generated HTML files to ensure everything appears as expected.
+   - If something looks incorrect, go back to your ``.rst`` files, edit them, save the changes, and re-run ``make html``.
 
 Committing and Pushing Changes
 ==============================

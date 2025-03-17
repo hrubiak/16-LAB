@@ -10,4 +10,6 @@ Welcome to 16-LAB's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+
+   equipment
    contribute
