@@ -103,9 +103,31 @@ Editing the Documentation
 Editing the documentation means modifying the ``.rst`` (reStructuredText) files, 
 which contain the text and formatting used to generate the HTML documentation.
 
-1. Open **VSCode**.
-2. Locate and open ``source/index.rst`` (or any ``.rst`` file).
-3. Make changes and save the file.
+### **1. Open the Project Folder in VSCode**
+There are two ways to open the repository in **VSCode**:
+
+#### **Option 1: Open from GitHub Desktop (Recommended)**
+1. In **GitHub Desktop**, go to **Repository → Open in Visual Studio Code**.
+
+#### **Option 2: Open Manually from File Explorer**
+1. Open **File Explorer (Windows)** or **Finder (Mac)**.
+2. Navigate to the cloned repository folder:
+
+   - **Windows:** ``C:\Users\YourName\Documents\16-LAB\``
+   - **Mac/Linux:** ``/Users/YourName/Documents/16-LAB/``
+3. Open the ``docs/`` folder where the documentation files are located.
+
+### **2. Locate and Open the reStructuredText (.rst) Files**
+1. Inside the ``docs/`` folder, you will find the main documentation files.
+2. The most important file is:
+
+   - ``index.rst`` → This is the main documentation entry point.
+3. To edit, **double-click** an ``.rst`` file in VSCode to open it.
+
+### **3. Edit the Documentation**
+1. Make the necessary changes in the ``.rst`` files.
+2. Follow the reStructuredText syntax for formatting.
+3. Save the file after editing (``Ctrl + S`` or ``Cmd + S`` on Mac).
 
 Previewing the Documentation Locally
 ====================================
